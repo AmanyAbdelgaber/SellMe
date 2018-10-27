@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15405c"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_shopping_bag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/loginImg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f7a31d"
+        android:text="User Name"
+        android:textSize="20sp"
+        android:id="@+id/nameLbl"
+        android:layout_below="@id/loginImg"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_txt_background"
+        android:id="@+id/nameTxt"
+        android:layout_below="@id/nameLbl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#f7a31d"
+        android:text="Password"
+        android:textSize="20sp"
+        android:id="@+id/passLbl"
+        android:layout_below="@id/nameTxt"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_txt_background"
+        android:id="@+id/passTxt"
+        android:layout_below="@id/passLbl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="#f7a31d"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:id="@+id/rememberCheckBox"
+        android:layout_below="@id/passTxt"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="40dp"
+        android:layout_below="@id/rememberCheckBox"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:id="@+id/loginBtn"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
